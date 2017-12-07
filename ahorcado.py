@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 
-from random import randint
+from playGame import *
 
-listaPalabras = ["amar", "temer", "partir"]
+wordList = ["AMAR", "TEMER", "PARTIR", "JUGAR", "CORRER", "DORMIR"]
 
-print(listaPalabras[randint(0, 2)])
- 
+word = selectWordFromWordList(wordList)
+wordAsList = wordToList(word)
+maskedWordAsList = masqWord(word)
+
+print(word)
+print(wordAsList)
+print(maskedWordAsList)
+
+isLetterInWord("A", wordAsList, maskedWordAsList)
+print(maskedWordAsList)
