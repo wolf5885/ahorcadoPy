@@ -18,6 +18,5 @@ def playerLives(lives):
 
     while True:
         isLetterInWord()
-        lives = 
 
 
