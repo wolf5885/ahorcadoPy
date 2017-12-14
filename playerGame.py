@@ -2,7 +2,7 @@
 from playGame import isLetterInWord
 
 
-def playerLetterWrite(letter):
+def playerLetterWrite():
     
     while True:
         isLetterInWord()
@@ -14,9 +14,18 @@ def playerLetterWrite(letter):
             print("~La palabra no contiene esta letra~")
             print("~Usted tiene una vida menos~")
 
-def playerLives(lives):
+def playerLives():
+
+    lives = 6
 
     while True:
         isLetterInWord()
+        if counter > 0:
+            break
+        else:
+            lives = lives - 1
+            break
+
+def riskWord():
 
 
